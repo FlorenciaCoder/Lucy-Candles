@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/*----------codigos de colores:
+--#f4dbd8 color mas claro de fondo
+--#BEA8A7 color vison
+--#C09891 rosa nude
+--#775144 marron
+--#2A0800 marron oscuro */
+
+/*---------------body*/
+
+body {
+    background-color: #f4dbd8;    
+}
+
+/*-------------header*/
+
+header {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 10px 20px;
+    background-color:#C09891; /* color vison */
+}
+.logo {
+    width: 150px;
+    height: auto;
+    border: black 1px solid; /* agrega borde */
+}
+/*--------------nav*/
+nav ul {
+    list-style: none;
+
+}
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    font-size: medium;
+    margin: 0 16px; /* separa cada li */
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+main {
+    margin: 20px;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #2A0800;
+}
+h2 {
+    color: #775144
+    margin: 20px; /* agrega 20px en todos los lados */
+}
+/*footer*/
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #C09891; /* color vison */
+}
