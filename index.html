@@ -1,56 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lucy Candles</title>
-    
+
     <!--googlefonts-->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
 
-   <!--------boostrap----->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!--------boostrap----->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 
     <!-----css----->
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
+
 <body>
     <!-----encabezado----->
     <header class="encabezado">
-        <a href="index.html">
-            <img class="logo" src="./img/logolucy.PNG" alt="Logo de Lucy Candles">
-        </a>
-        <!-----navegacion ----->
-        <nav>
-            <ul>
-                <li><a href="index.html"> Home </a></li>
-                <li><a href="html/sobreNosotros.html"> Sobre Nosotros </a></li>
-                <li><a href="html/productos.html">Productos</a></li>
-                <li><a href="html/contacto.html">Contacto</a></li>
-                <li><a href="html/cuidadodetusvelas.html">Cuidado de tus velas</a></li>
-            </ul>
-        </nav>
-        
 
+        <!-----navegacion ----->
+        <nav class="navbar navbar-expand-lg encabezado">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img class="logo" src="./img/logolucy.PNG" alt="Logo de Lucy Candles">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="index.html"> Home </a></li>
+                        <li><a href="html/sobreNosotros.html"> Sobre Nosotros </a></li>
+                        <li><a href="html/productos.html">Productos</a></li>
+                        <li><a href="html/contacto.html">Contacto</a></li>
+                        <li><a href="html/cuidadodetusvelas.html">Cuidado de tus velas</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
-     <!-----seccion principal----->
+        <!-----seccion principal----->
         <section class="principal">
-    
-          <h1 class="titulo"> Lucy Candles </h1>
-          <h2 class="h2"> ¿Quienes Somos? </h2>
-          <p class="parrafo"> Somos una empresa dedicada a la fabricación de velas artesanales, utilizando ingredientes naturales y fragancias únicas para crear una experiencia sensorial inigualable. </p>
-          <!------Foto demostrativa----->    <div class="foto_home">
-         <a href="">
-            <img class="fotohome" src="./img/velaHome.jpg" alt="foto ilustrativa de velas">
-         </a>
+
+            <h1 class="titulo col-xl-4 col-md-6 col-sm12"> Lucy Candles </h1>
+            <h2 class="h2"> ¿Quienes Somos? </h2>
+            <p class="parrafo"> En Lucy Candles creemos que cada vela encendida cuenta una historia. Somos un
+                emprendimiento artesanal nacido del amor por los detalles, la calidez del hogar y la magia de lo simple.
+                Cada una de nuestras velas está hecha a mano, con materiales seleccionados cuidadosamente y una
+                intención clara: transformar espacios en refugios de paz.
+
+                Nuestro proceso combina tradición y creatividad. Desde la elección de las fragancias hasta el diseño de
+                cada envase, buscamos que cada pieza refleje personalidad, armonía y belleza. No producimos en masa:
+                cada vela es única, como las personas que la eligen.
+
+                Apostamos por la sustentabilidad, el trabajo consciente y el valor de lo hecho con amor. Nos inspira la
+                naturaleza, los rituales cotidianos y el deseo de regalar momentos especiales. Lucy Candles no es solo
+                una marca: es una experiencia sensorial que invita a reconectar con lo esencial.
+
+                Gracias por acompañarnos en este camino luminoso. Que cada llama que enciendas te acerque a lo que más
+                querés. </p>
+            <!------Foto demostrativa----->
+            <div class="foto_home">
+                <a href="">
+                    <img class="fotohome" src="./img/velaHome.jpg" alt="foto ilustrativa de velas">
+                </a>
         </section>
     </main>
     <!-----pie de pagina----->
     <footer>
-      <p>Lucy Candles - Todos los derechos reservados &copy;</p>
+        <p>Lucy Candles - Todos los derechos reservados &copy;</p>
     </footer>
     <!--bsjvs-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -34,7 +34,7 @@ header {
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around
 
 }
 .logo {
@@ -196,10 +196,13 @@ h1, h2 {
         margin: 10px auto; /* centra los productos */
         width: 90%; /* ancho del producto */
     }
+    .fotohome {
+       display: none; /* oculta la imagen de la home en pantallas pequeñas */
+    }
     @media (max-width: 481px) {
         .productos {
             grid-template-columns: 1fr; /* una columna */
 
         }
-
+    
     }
