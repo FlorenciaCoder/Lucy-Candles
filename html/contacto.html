@@ -15,28 +15,37 @@
 <body>
  <!-----encabezado----->
   <header class="encabezado">
-        <a href="../index.html">
-            <img class="logo" src="../img/logolucy.PNG" alt="Logo de Lucy Candles">
-        </a>
+        
         <!-----navegacion ----->
-        <nav>
-            <ul>
-                <li><a href="../index.html"> Home </a></li>
-                <li><a href="sobreNosotros.html"> Sobre Nosotros </a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="cuidadodetusvelas.html">Cuidado de tus velas</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg encabezado">
+            <div class="container-fluid">
+               <a href="../index.html">
+               <img class="logo" src="../img/logolucy.PNG" alt="Logo de Lucy Candles">
+               </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li><a href="../index.html"> Home </a></li>
+                        <li><a href="sobreNosotros.html"> Sobre Nosotros </a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                       <li><a href="contacto.html">Contacto</a></li>
+                       <li><a href="cuidadodetusvelas.html">Cuidado de tus velas</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
     </header>
     <main>
+        <section class="contacto">
         <h1> Contacto </h1>
 
         <h2> ¡Escribinos! </h2>
         <!------formulario de contacto------->
         <p>Completa el siguiente formulario y te contactamos a la brevedad</p>
-        <form>
+        <form class="formulario">
             <label for="nombre">nombre y apellido</label>
             <input type="text" id="nombre" placeholder="Lucy Candles" required>
 
@@ -50,10 +59,12 @@
         </form>
         <!--------iframe-------->
         <h2>Nuestra Sucursal</h2>
-
+        <div class="mapa">
         <p>Estamos ubicados en calle falsa 123</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.083463141344!2d-4.460735324301049!3d40.184955971477834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4035b57551b6f3%3A0x84be095154d712f6!2sC.%20Falsa%2C%2045908%20Aldea%20en%20Cabo%2C%20Toledo%2C%20Espa%C3%B1a!5e0!3m2!1ses!2sar!4v1753077287361!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p>Te esperamos!</p>
+        </div>
+        </section>
     </main>
     <!---pie de pagina----->
     <footer>
