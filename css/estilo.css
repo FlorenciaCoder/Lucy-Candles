@@ -36,7 +36,6 @@ header {
     top: 0;
     display: flex;
     justify-content: space-around;
-
 }
 .logo {
     width: 150px;
@@ -240,6 +239,7 @@ textarea::placeholder {
     "parrafo2 parrafo2";
   gap: 20px;
   padding: 20px;
+
 }
 .video {
   max-width: 1200px;
@@ -249,20 +249,15 @@ textarea::placeholder {
 }
 
 
-.fotonosotros {
+.fotoNosotros {
   grid-area: foto;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+max-width: 100%;
+  height: auto;
 }
 
-img.velitas {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 10px;
-}
 
 
 
@@ -291,7 +286,7 @@ img.velitas {
 
 }
 ul {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
     text-align: center;
     color: black;
     text-decoration: solid;
@@ -314,7 +309,6 @@ h3 {
 
 
 /*...mediaq..*/
-
     @media (max-width: 480px) {
    .principal {
     grid-template-areas:
@@ -324,6 +318,9 @@ h3 {
       "parrafo";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+  }
+  .fotoNosotros {
+    display: none !important;
   }
   .productos {
     width: 100%;
@@ -363,10 +360,30 @@ h3 {
     width: 100%;
     padding: 10px; 
     overflow: hidden;
-}
-h1, h2, h3, ul{
-  font-size: 1rem;
+ }
+   h1, h2, h3, ul{
+  font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: center;
+ }
+
+  .sobreNosotros {
+    grid-template-areas:
+      "titulos"
+      "parrafo1"
+      "parrafo2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto ;
+  }
+
+   .parrafo1 {
+    font-size: 1rem;
+  } 
+   .parrafo2 {
+     font-size: 1rem;
+    }
+    .fotoNosotros {
+      display: none;
+    }
 }
