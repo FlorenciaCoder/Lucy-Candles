@@ -326,6 +326,7 @@ main {
     width: 100%;
   }
   .formulario {
+    display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
@@ -408,6 +409,18 @@ main {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .formulario {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 20px;
+  }
+  .formulario input,
+  .formulario textarea {
+    width: 100% !important;
+    box-sizing: border-box;
   }
 }
 

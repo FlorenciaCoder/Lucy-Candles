@@ -53,6 +53,7 @@
   }
 
   .formulario {
+    display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: center;
@@ -155,4 +156,24 @@
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
+  }
+  //ajustes formulario contacto mobile
+  @media (max-width: 700px) {
+  .formulario {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 20px;
+
+    input,
+    textarea {
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+  }
 }
+
+
+
+
+
