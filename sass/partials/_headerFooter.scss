@@ -1,0 +1,39 @@
+header {
+  border-bottom: 10px solid #f4dbd8;
+  text-align: center;
+  padding: 20px 0;
+  background: url(../img/fondonuevo.jpg) center/cover no-repeat;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+
+  .logo {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    border: none;
+  }
+}
+
+nav {
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      font-weight: bold;
+      font-size: medium;
+      margin: 0 16px;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  border-top: 1px solid black;
+  background: url(../img/fondonuevo.jpg) center/cover fixed no-repeat;
+}
+

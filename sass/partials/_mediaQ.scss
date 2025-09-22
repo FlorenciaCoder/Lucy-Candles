@@ -1,0 +1,157 @@
+/* Tablet: entre 481px y 1200px */
+@media (min-width: 481px) and (max-width: 1200px) {
+  .principal {
+    display: grid;
+    grid-template-areas:
+      "titulo titulo"
+      "h2 h2"
+      "parrafo parrafo";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #BEA8A7;
+  }
+
+  .fotohome {
+    display: none !important;
+  }
+
+  .fotoNosotros {
+    display: none !important;
+  }
+
+  .sobreNosotros {
+    display: grid;
+    grid-template-areas:
+      "titulos"
+      "parrafo1"
+      "parrafo2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .parrafo1,
+  .parrafo2 {
+    font-size: 1.6rem;
+  }
+
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .producto {
+    margin: 10px;
+    width: 100%;
+  }
+
+  .formulario {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+/* Mobile: hasta 480px */
+@media (max-width: 480px) {
+  .principal {
+    display: grid;
+    grid-template-areas:
+      "titulo"
+      "h2"
+      "parrafo";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #BEA8A7;
+  }
+
+  .fotohome {
+    display: none !important;
+  }
+
+  .fotoNosotros {
+    display: none !important;
+  }
+
+  .productos {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .producto {
+      margin: 10px auto;
+      width: 90%;
+    }
+  }
+
+  .sobreNosotros {
+    display: grid;
+    grid-template-areas:
+      "titulos"
+      "parrafo1"
+      "parrafo2";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .parrafo1,
+  .parrafo2 {
+    font-size: 1rem;
+  }
+
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cuidadodetusvelas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  iframe {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+  }
+
+  h1, h2, ul {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
