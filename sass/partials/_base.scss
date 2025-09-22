@@ -54,7 +54,7 @@ body {
     font-size: 1.2rem;
     padding-top: 5px;
   }
-
+  //estilos para botones----------------------
   .btn-lucy {
     background-color: $violeta-btn;
     border-color: $rosa-claro-borde;
@@ -69,7 +69,7 @@ body {
   .btn-primary:active {
     animation: pulse 0.3s ease;
   }
-
+ //animacion para boton----------------------
   @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
