@@ -1,5 +1,6 @@
+@use "./variables" as *;
 header {
-  border-bottom: 10px solid #f4dbd8;
+  border-bottom: 10px solid $rosa-suave;
   text-align: center;
   padding: 20px 0;
   background: url(../img/fondonuevo.jpg) center/cover no-repeat;

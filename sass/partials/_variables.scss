@@ -1,2 +1,15 @@
-$font-size-header: clamp(1.2rem, 2vw + 0.5rem, 2.5rem);
-$padding-header: clamp(1rem, 3vw, 2rem);
+//fonts
+
+$fuente-titulo: "Playfair Display", serif;
+$fuente-texto: "Open Sans", sans-serif;
+
+// Colores base
+$rosa-suave: #f4dbd8;
+
+$gris-borde: #dcdcdc;
+$negro-texto: #333333;
+$blanco: #ffffff;
+
+// Sombra
+$sombra-suave: rgba(0, 0, 0, 0.1);
+
