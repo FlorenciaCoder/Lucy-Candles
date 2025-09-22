@@ -1,78 +1,21 @@
 @use "./variables" as *;
-/* Tablet: entre 481px y 1200px */
-@media (min-width: 481px) and (max-width: 1200px) {
-  .principal {
-    display: grid;
-    grid-template-areas:
-      "titulo titulo"
-      "h2 h2"
-      "parrafo parrafo";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    justify-items: center;
-    align-items: center;
-    padding: 20px;
-    background-color: $rosa-suave;
-  }
-
-  .fotohome {
-    display: none !important;
-  }
-
-  .fotoNosotros {
-    display: none !important;
-  }
-
-  .sobreNosotros {
-    display: grid;
-    grid-template-areas:
-      "titulos"
-      "parrafo1"
-      "parrafo2";
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .parrafo1,
-  .parrafo2 {
-    font-size: 1.6rem;
-  }
-
-  .productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    padding: 10px;
-  }
-
-  .producto {
-    margin: 10px;
-    width: 100%;
+/* Mobile y tablet hasta 978px */
+@media (max-width: 978px) and (min-width: 320px) {
+  input,
+  textarea {
+    width: 100% !important;
+    box-sizing: border-box;
   }
 
   .formulario {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    flex-direction: column !important;
+    align-items: stretch !important;
     justify-content: center;
-    align-items: center;
+    gap: 20px;
   }
-iframe {
-  width: 90%;
-  max-width: 600px;
-  height: 400px;
-  margin: 0 auto;
-  display: block;
-  border: none;
-}
-}
 
-
-
-/* Mobile: hasta 480px */
-@media (max-width: 480px) {
+  // Otros estilos que acompañaban
   .principal {
     display: grid;
     grid-template-areas:
@@ -87,17 +30,12 @@ iframe {
     background-color: $rosa-suave;
   }
 
-  .fotohome {
-    display: none !important;
-  }
-
+  .fotohome,
   .fotoNosotros {
     display: none !important;
   }
 
   .productos {
-    width: 100%;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,23 +63,6 @@ iframe {
     font-size: 1rem;
   }
 
-  .formulario {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-
-  .cuidadodetusvelas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 10px;
-    overflow: hidden;
-  }
-
   iframe {
     width: 80%;
     height: 300px;
@@ -161,24 +82,4 @@ iframe {
     margin-top: 20px;
     margin-bottom: 10px;
   }
-
-  }
-  //ajustes formulario contacto mobile
-  @media (max-width: 700px) {
-  .formulario {
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 20px;
-
-    input,
-    textarea {
-      width: 100% !important;
-      box-sizing: border-box;
-    }
-  }
 }
-
-
-
-
-

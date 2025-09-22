@@ -108,6 +108,7 @@ main {
     @include centrado-flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     gap: 20px;
     margin-bottom: 20px;
 
@@ -115,7 +116,6 @@ main {
       margin-top: 12px;
     }
   }
-
   .mapa {
     @include centrado-flex;
     flex-direction: column;
@@ -170,3 +170,4 @@ main {
 .cuidadodetusvelas {
   background-color: $rosa-suave;
 }
+
