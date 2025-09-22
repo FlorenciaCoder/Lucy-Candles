@@ -1,0 +1,32 @@
+@use "./variables" as *;
+//mixins-------------------
+
+@mixin centrado-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin sombra-borde($radio: 10px, $sombra: $sombra-texto) {
+  border-radius: $radio;
+  box-shadow: 0 4px 8px $sombra;
+}
+//extends------------------
+.titulo-base {
+  font-family: $fuente-titulo;
+  color: $negro-texto;
+  text-align: center;
+  text-shadow: 4px 4px 5px $sombra-texto;
+}
+.parrafo-base {
+  font-size: 2rem;
+  text-align: center;
+  color: $negro-texto;
+  text-decoration: solid;
+}
+.tarjeta-base {
+  background-color: $rosa-suave;
+  border: 1px solid $rosa-borde;
+  @include sombra-borde(10px, $sombra-texto);
+  padding: 10px;
+  margin: 10px;
+}
