@@ -1,7 +1,4 @@
 @use "./variables" as *;
-html {
-  font-size: 62.5%; // 1rem = 10px
-}
 
 body {
   font-family: $fuente-texto;
